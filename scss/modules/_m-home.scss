@@ -1,0 +1,155 @@
+/*INDEX.HTML*/
+/* Section Student-Discover*/
+.m-home-student{
+    padding: 3rem 0 5rem 0;
+    margin: 0 1rem;
+    background-color: map-get($color-bck, second);
+}
+
+.m-home-student h1{
+    margin-top: 0;
+    text-align: left;
+    color: map-get($color-font, third);
+    text-transform: uppercase;
+}
+
+.m-home-student-discover p{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.m-home-student-discover-1p{
+    color: map-get($color-font, third);
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+.m-home-student-discover-img{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 5rem 5rem 2rem 5rem;
+}
+
+@media screen and (min-width: map-get($breakpoint, tab)){
+    .m-home-student-discover{
+        padding-top: 8rem;
+    }    
+    .m-home-student-discover-img{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: map-get($breakpoint, desktop)){
+    .m-home-student-discover{
+        padding-top: 8rem;
+    }    
+    .m-home-student-discover-img{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+/*Section Offered Services*/
+.m-home-services-main{
+    margin: 4rem;
+}
+
+.m-home-services-topic{
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.m-home-services-topic span{
+    font-size: 2.7rem;
+}
+
+.m-home-services-topic h3{
+    margin: 2rem 0 1rem;
+}
+
+@media screen and (min-width: map-get($breakpoint, tab)){
+    .m-home-services-topic{
+        margin: 2rem 0.5rem;
+    }
+}
+
+@media screen and (min-width: map-get($breakpoint, desktop)){
+    .m-home-services-topic{
+        margin: 2rem;
+    }
+}
+
+/* Section Chiffres*/
+.m-home-numbers{
+    height: 100%;
+    min-height: 9rem;
+    padding-bottom: 7rem;
+    background: map-get($color-bck, radient);
+}
+
+.m-home-numbers-detail{
+    margin-top: 5rem;
+}
+
+.m-home-numbers-detail p{
+    text-align: center;
+    color: map-get($color-font, second);
+}
+
+.m-home-numbers-123{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/*Section Derniers posts*/
+.m-home-posts{
+    padding: 3rem 0.5rem 8rem 0.5rem;
+    background-color: map-get($color-bck, second);
+}
+
+.m-posts-article{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0.5rem;
+}
+
+.m-posts-article h3{
+    margin: 1.5rem 0 1rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+}
+
+.m-posts-article a{
+    color: map-get($color-font, third);
+}
+
+.m-posts-article-info{
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px map-get($color-bck, border)
+}
+
+.m-posts-article-info-author{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.m-posts-article-info-author p{
+    padding: 0.5rem 0;
+}
+
+.m-posts-article-info-comment{
+    display: flex;
+}
+
+.m-posts-article-info-comment i{
+    padding: 0.3rem;
+    color: map-get($color-font, main);
+}

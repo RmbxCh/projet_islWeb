@@ -1,0 +1,31 @@
+/*GRID*/
+
+$grid-columns: 12;
+
+$grid-size:(
+    md: 768px,
+    lg: 1024px, 
+);
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@for $i from 1 through $grid-columns{
+    .col-#{$i}{
+        flex: 0 0 ($i / $grid-columns * 100%);
+        max-width: $i / $grid-columns * 100%;
+    }
+}
+
+@each $key, $value in $grid-size{
+    @media screen and (min-width: $value){
+        @for $i from 1 through $grid-columns{
+            .col-#{$key}-#{$i}{
+                flex : 0 0 ($i / $grid-columns * 100%);
+                max-width: $i / $grid-columns * 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,208 @@
+/*ARTICLE.HTML*/
+.m-article-main{
+    background-color: map-get($color-bck, second);
+}
+
+/*Section Contenu de l'article*/
+.m-article-content{
+    margin: 0 1rem;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    border-bottom: solid 0.1rem map-get($color-bck, border);
+}
+
+.m-article-content h2{
+    padding-top: 0.8rem;
+}
+
+.m-article-content p{
+    padding: 1rem 0;
+}
+
+.m-article-aside{
+    padding-bottom: 2rem;
+}
+
+.m-article-aside-detail{
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.m-article-aside-detail p, .m-article-aside-detail time{
+    margin-right: 0.8rem;
+    padding: 0;
+    font-size: 0.8rem;
+}
+
+.m-article-aside-detail .lnr{
+    color: map-get($color-font, third);
+}
+
+.m-article-aside-rs{
+    margin: 1rem 0;
+}
+
+.m-article-aside-rs a{
+    padding: 0.7rem;
+    color: map-get($color-font, third);
+}
+
+@media screen and (min-width: map-get($breakpoint, tab)){
+    .m-article-aside{
+        margin-top: 1rem;
+        margin-right: 0.8rem;
+        text-align: right;
+    }
+    .m-article-aside-detail{
+        justify-content: flex-end;
+    }
+    .m-article-aside-rs{
+        display: flex;
+        justify-content: center;
+    }
+    .m-article-aside-rs a{
+        padding: 0.3rem;
+    }
+}
+
+@media screen and (min-width: map-get($breakpoint, desktop)){
+    .m-article-aside{
+        margin-top: 1rem;
+        margin-right: 1.5rem;
+        text-align: right;
+    }
+    .m-article-aside-detail{
+        justify-content: flex-end;
+    }
+    .m-article-aside-rs{
+        display: flex;
+        justify-content: center;
+    }
+    .m-article-aside-rs a{
+        padding: 0.3rem;
+    }
+}
+
+.m-article-apart{
+    margin: 1.5rem 0;
+    padding: 2rem;
+    background-color: map-get($color-bck, main);
+    box-shadow: -0.8rem 0.8rem 1rem 0.5rem #f4f3f9;
+    font-size: 0.9rem;
+}
+
+.m-article-img{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.m-article-img img{
+    max-width: 48%;
+}
+
+/*Section navigation entre différents articles*/
+.m-article-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 1rem;
+}
+
+@media screen and (min-width: map-get($breakpoint, tab)){
+    .m-article-nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: map-get($breakpoint, desktop)){
+    .m-article-nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.m-article-nav img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0;
+}
+
+.m-article-nav a{
+    color: map-get($color-font, third);
+}
+
+.m-article-nav-previous{
+    align-self: flex-start;
+    @include nav-articles;
+}
+
+.m-article-nav-next{
+    align-self: flex-end;
+    text-align: right;
+    @include nav-articles;
+    
+}
+
+.m-article-nav-block{
+    padding: 1rem;
+}
+
+/*Section Commentaires*/
+.m-article-comments-list{
+    margin: 0 1rem;
+    padding: 3rem 1rem 5rem 1rem;
+    border: solid 0.1rem map-get($color-bck, border);
+}
+
+.m-article-comments-list h3{
+    margin: 3rem;
+    text-align: center;
+}
+
+.m-article-comments-list p{
+    font-size: 0.75rem;
+    margin: 1rem 0;
+}
+
+.m-article-comments-list img{
+    width: 100%;
+    height: auto;
+}
+
+.m-article-comments-list time{
+    font-size: 0.75rem;
+    color: map-get($color-font, detail);
+}
+
+.m-article-comments-content, .m-article-comments-response{
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.m-article-comments-response{
+    margin-left: 2rem; /*décallage pour les réponses aux commentaires*/
+}
+
+.m-article-comments-info{
+    width: 50%;
+    margin: 0 0 1rem 1.5rem;;
+}
+
+.m-article-comments-form{
+    margin: 3.5rem 1rem;
+    padding: 3rem 1rem 6rem 1rem;
+    border: solid 0.1rem map-get($color-bck, border);
+}
+
+.m-article-comments-form h3{
+    margin: 2rem;
+    text-align: center;
+}
+
+.m-article-comments-form button{
+    display: block;
+    margin: 0 auto;
+}

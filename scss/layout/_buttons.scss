@@ -1,0 +1,78 @@
+/*BUTTONS*/
+.l-btn-home-about{
+    display: block;
+    width: 10rem;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    background: map-get($color-bck, radient);
+    color: map-get($color-font, second);
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.l-btn-blog{
+    position: relative;
+    z-index: 2;
+    margin-left: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: map-get($color-bck, main);
+    border: none;
+    color: map-get($color-font, third);
+    font-weight: bold;
+}
+
+.l-btn-article-reply{
+    width: 7rem;
+    height: 3rem;
+    background-color: map-get($color-bck, main);
+    border: solid 0.1rem map-get($color-bck, border);
+    font-family: $font;
+    color: map-get($color-font, third);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.l-btn-form{
+    min-width: 10rem;
+    height: 3rem;
+    background-color: map-get($color-bck, third);
+    border: none;
+    color: map-get($color-font, second);
+    font-family: $font;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.l-btn-aside-search{
+    position: absolute;
+    z-index: 2;
+    top: 2.2rem;
+    right: 0.2rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: none;
+    color: map-get($color-font, second);
+}
+
+.l-btn-newsletter{
+    position: absolute;
+    min-height: 2.6rem;
+    padding: 0 0.3rem;
+    background-color: map-get($color-bck, third);
+    border: none;
+    font-family: $font;
+    color: map-get($color-font, second);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.l-btn-footer{
+    width: 2.7rem;
+    height: 2.7rem;
+    margin: 0 0 0 -0.25rem;
+    background-color: map-get($color-bck, third);
+    border: none;
+    color: map-get($color-font, second);
+}

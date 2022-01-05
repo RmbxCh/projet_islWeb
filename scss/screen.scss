@@ -1,0 +1,24 @@
+/*CSS PROJET TRAVAIL FINAL*/
+/*TOOLS*/
+@import "tools/reset.scss";
+@import "tools/grid.scss";
+
+/*BASES*/
+@import "base/variables.scss";
+@import "base/base.scss";
+
+/*LAYOUT*/
+@import "layout/buttons.scss";
+@import "layout/form.scss";
+@import "layout/header.scss";
+@import "layout/nav-hamburger.scss";
+@import "layout/footer.scss";
+@import "layout/aside-blog.scss";
+@import "layout/layout-pages-communes.scss";
+
+/*MODULES*/
+@import "modules/m-home.scss";
+@import "modules/m-about.scss";
+@import "modules/m-blog.scss";
+@import "modules/m-article.scss";
+@import "modules/m-contact.scss";

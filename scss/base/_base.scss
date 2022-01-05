@@ -1,0 +1,82 @@
+/*BASES*/
+html{
+    font-size: map-get($font-size, mob);
+}
+
+@media screen and (min-width: map-get($breakpoint, tab)){
+    html{
+        font-size: map-get($font-size, tab);
+    }
+}
+
+@media screen and (min-width: map-get($breakpoint, desktop)){
+    html{
+        font-size: map-get($font-size, desktop);
+    }
+}
+
+body{
+    font-family: $font;
+}
+
+.wrap{
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1, h2, h3, h4{
+    color: map-get($color-font, third);
+    font-weight: bold;
+}
+
+h1{
+    margin-top: 2.5rem;
+    font-size: 3rem;
+    color: map-get($color-font, second);
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+    line-height: 2.7rem;
+    padding-bottom: 1rem;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+h4{
+    font-size: 1.1rem;
+}
+
+h5{
+    padding-bottom: 1rem;
+}
+
+p{
+    color: map-get($color-font, main);
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: map-get($color-font, main);
+}
+
+a:hover, a:active{
+    color: map-get($color-font, deco);
+}
+
+input, textarea, button{
+    display: inline-block;
+    font-family: $font;
+}
+
+time{
+    color: map-get($color-font, main);
+}

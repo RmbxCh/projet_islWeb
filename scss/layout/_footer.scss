@@ -1,0 +1,48 @@
+/*MAIN FOOTER*/
+.l-main-footer{
+    height: 100%;
+    background-color: map-get($color-bck, footer);
+    color: map-get($color-font, second);
+    padding: 7rem 0;
+}
+
+.l-main-footer h3{
+    margin-left: 0.5rem;
+    padding-bottom: 1rem;
+    color: map-get($color-font, second);
+    font-size: 1.2rem;
+}
+
+.l-footer-section{
+    margin: 2rem 1rem 0 1rem;
+}
+
+.l-footer-section p{
+    padding: 0.5rem;
+}
+
+.l-footer-section a{
+    color: map-get($color-font, deco);
+}
+
+.l-footer-rs i{
+    margin: 1rem 0.5rem;
+    color: map-get($color-font, second);
+}
+
+/*FOOTER AVEC LOGOS*/
+.l-footer-second{
+    height: 15rem;
+    background: map-get($color-bck, radient);
+}
+
+@media screen and (min-width: map-get($breakpoint, tab)){
+    .l-footer-second img{
+        max-width: 15%;
+    }
+}
+@media screen and (min-width: map-get($breakpoint, desktop)){
+    .l-footer-second img{
+        max-width: 15%;
+    }    
+}

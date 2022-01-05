@@ -1,0 +1,57 @@
+/*VARIABLES*/
+$font: 'Poppins';
+
+/*Maps*/
+$breakpoint:(
+    tab: 768px,
+    desktop: 1024px,
+);
+
+$font-size:(
+    mob: 14px,
+    tab: 10px,
+    desktop: 14px,
+);
+
+$color-bck:(
+    main: #fff,
+    second: #f9f9ff, /*gris clair section*/
+    third: #ff9a9e,
+    radient: linear-gradient(to right, #ff9a9e, #fad0c4),
+    tube: #dedddd,
+    border: #eeeeee,
+    footer: #000,
+);
+
+$color-font:(
+    main:#777777,
+    second: #fff,
+    third: #222222,
+    detail: #cfcfcf, /*gris clair*/
+    deco: #ff9a9e,
+);
+
+/*Mixin*/
+@mixin tube-expertness{
+    height: 100%;
+    margin-left: 0.2rem;
+    border-radius: 10rem;
+    background: map-get($color-bck, radient);
+}
+
+@mixin articles-thema{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15rem;
+    margin: 1rem;
+    background-size: cover;
+}
+
+@mixin nav-articles{
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.6rem;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Contact - Clone</title>
+        <link rel="stylesheet" href="./css/screen.css" /> <!-- css -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"> <!--googlefonts-->
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"> <!-- linearicons-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" /> <!-- fontawsome-->
+    </head>
+
+    <body>
+        <div class="wrap">
+            <header class="l-main-header"> <!--MAIN HEADER-->
+                <div class="l-header-logo">
+                    <a href="./index.html"><img src="./img/logo.png" alt="logo" title="logo" /></a>
+                </div>
+                <div class="l-header-nav-ham">
+                    <span class="lnr lnr-menu" id="menuHamburger"></span>
+                </div>
+                <nav class="l-main-nav" id="mainMenu">
+                    <ul> 
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./about.html">a propos</a></li>
+                        <li><a href="./portfolio.html">projets</a></li>
+                        <li><a href="./blog.html">blog</a></li>
+                        <li><a href="./contact.html">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        
+        <main class="m-contact-main">
+            <header class="l-header-title"><!--Header Title-->
+                <div class="wrap">
+                    <div class="l-header-title-path">
+                        <h1>Contacts</h1>
+                        <p><a href="./index.html">Home</a> <span class="lnr lnr-arrow-right"></span> Contacts</p>
+                    </div>
+                </div>
+            </header>
+            <div class="wrap">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="m-contact-map"> <!--Section Google Map-->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20249.045328856442!2d5.581766717002874!3d50.624689410855225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f74b8eacfcfb%3A0x40099ab2f4d6b40!2zTGnDqGdl!5e0!3m2!1sfr!2sbe!4v1640701499418!5m2!1sfr!2sbe" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="m-contact-coordonnees"> <!--Section Coordonnees-->
+                            <div class="m-contact-coordonnees-bloc">
+                                <span class="lnr lnr-home"></span>
+                                <div class="m-contact-coordonnees-info">
+                                    <p class="m-contact-coordonnees-detail">Liège, Liège</p>
+                                    <p>4000 Liège</p>
+                                </div>
+                            </div>
+                            <div class="m-contact-coordonnees-bloc">
+                                <span class="lnr lnr-phone-handset"></span>
+                                <div class="m-contact-coordonnees-info">
+                                    <p class="m-contact-coordonnees-detail">+32 (0)4 123 45 67</p>
+                                    <p>Lun au Ven 9h-18h</p>
+                                </div>
+                            </div>
+                            <div class="m-contact-coordonnees-bloc">
+                                <span class="lnr lnr-envelope"></span>
+                                <div class="m-contact-coordonnees-info">
+                                    <p class="m-contact-coordonnees-detail">info@info.com</p>
+                                    <p>Contactez-nous quand vous voulez!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-8">
+                        <div class="m-contact-form"> <!--Section formulaire de contact-->
+                            <form class="l-form-contact" method="post" action="contact.html">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <input type="text" placeholder="Votre nom" /> 
+                                        <input type="email" placeholder="Votre adresse mail" />
+                                        <input type="text" placeholder="L'objet de votre demande" />
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="m-contact-form-message">
+                                            <textarea name="message" placeholder="Détaillez votre demande ici"></textarea>
+                                            <button class="l-btn-form">envoyer</button>
+                                        </div>
+                                    </div>
+                                </div>                             
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </main>
+
+        <footer class="l-main-footer"> <!--MAIN FOOTER-->
+            <div class="wrap">
+                <div class="row">
+                    <div class="col-12 col-md-5 col-lg-5">
+                        <div class="l-footer-section"> <!--Footer section about-->
+                            <h3>A propos</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quo totam quis exercitationem ipsa necessitatibus fuga.</p>
+                            <p>Copyright &copy; 2020 All rights reserved | This template was cloned by <a href="http://www.rambeaux.be" target="_blank" rel="noopener noreferrer">Charlotte Rambeaux</a> </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-5">
+                        <div class="l-footer-section"> <!--Footer section newsletter-->
+                            <h3>Newsletter</h3>
+                            <p>Recevez nos nouvelles</p>
+                            <form class="l-form-footer" method="post" action="index.html">
+                                <input type="email" placeholder="Votre addresse mail" />
+                                <button class="l-btn-footer"><i class="fas fa-arrow-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 col-lg-2">
+                        <div class="l-footer-section"> <!--Footer section RS-->
+                            <h3>Suivez-moi!</h3>
+                            <p>Restons connectés</p>
+                            <div class="l-footer-rs">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>

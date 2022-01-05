@@ -1,0 +1,102 @@
+/*HEADER MAIN*/
+.l-main-header{
+    position: relative;
+    display: flex;
+    flex-direction : row;
+    justify-content: space-between;
+    background-color:map-get($color-bck, main);
+}
+
+.l-header-logo{
+    padding: 1.5rem 2rem;
+}
+
+.l-header-nav-ham{
+    padding: 1.5rem;
+}
+
+.l-header-nav-ham span{
+    position: relative;
+    z-index: 100;
+    padding: 0.6rem;
+    font-size: 2rem;
+    color: map-get($color-font, main);
+}
+
+/*HEADER AVEC TITRE DES PAGES*/
+.l-header-title{
+    height: 15rem;
+    margin-bottom: 3rem;
+    background: map-get($color-bck, radient);
+}
+
+.l-header-title-path{
+    padding: 2rem;
+}
+
+.m-header-title-article{
+    font-size: 2rem;
+}
+
+@media screen and (min-width: map-get($breakpoint, tab)){
+    .m-header-title-article{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: map-get($breakpoint, desktop)){
+    .m-header-title-article{
+        font-size: 3rem;
+    }
+}
+
+.l-header-title-path p, .l-header-title-path a{
+    color: map-get($color-font, second);
+    text-align: center;
+}
+
+.l-header-title-path span{
+    padding: 0 0.5rem;
+}
+
+/* HEADER TITRE DES SECTIONS */
+.l-header-section{
+    margin: 3rem; 
+    text-align: center;
+}
+
+/*HEADER BLOG*/
+.l-blog-header{
+    position: relative;
+    min-height: 40rem;
+    background: url(https://picsum.photos/1920/720) no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+.l-blog-header::after{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    content: '';
+    background-color: rgba(#000, 0.6)
+}
+
+.l-blog-header h1{
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    padding: 12rem 1rem 1rem 1rem;
+    font-size: 2.5rem;
+}
+
+.l-blog-header p{
+    position: relative;
+    z-index: 2;
+    margin: 1.5rem 2.5rem 2.5rem;
+    color: map-get($color-font, second);
+    text-align: center;
+}

@@ -1,0 +1,59 @@
+/*CONTACT.HTML*/
+.m-contact-main{
+    background-color: map-get($color-bck, second);
+    padding-bottom: 6rem;
+}
+
+/*Section Google Map*/
+.m-contact-map{
+    margin-top: 4rem;
+}
+
+.m-contact-map iframe{
+    width: 100%;
+    height: 30rem;
+}
+
+/*Section Coordonnees*/
+.m-contact-coordonnees{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0.5rem;
+}
+
+.m-contact-coordonnees .lnr{
+    font-size: 2.5rem;
+    color: map-get($color-font, deco);
+}
+
+.m-contact-coordonnees-bloc{
+    display: flex;
+    margin: 1rem;
+}
+
+.m-contact-coordonnees-info{
+    margin: 0 2.5rem;
+}
+
+.m-contact-coordonnees-detail{
+    font-size: 1.2rem;
+    color: map-get($color-font, third);
+}
+
+/*Section formulaire de contact*/
+.m-contact-form-message{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.m-contact-form-message .l-btn-form{
+    align-self: flex-end;
+    margin: 1rem;
+}
+
+@media screen and (min-width: map-get($breakpoint, desktop)){
+    .m-contact-form-message .l-btn-form{
+        margin: 2rem 0;
+    }  
+}
